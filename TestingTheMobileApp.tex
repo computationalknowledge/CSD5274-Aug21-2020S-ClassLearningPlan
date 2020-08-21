@@ -1,0 +1,73 @@
+\subsection{Testing the Mobile App}
+
+One important way that mobile app testing differs from other kinds of software testing is in terms of environments. Another important difference has to do with the tools used to support mobile app testing. So, in this chapter, we will address tools, including tools for performance testing and functional test automation. We’ll also address test environments, how the type of mobile app you’re testing affects your test environment needs, and how you can assemble a mix of test environment resources that will address your testing needs while staying within your budgetary constraints.
+\newline
+\section{Learning Outcomes}
+\begin{enumerate}
+
+\item We’ll start by talking about mobile devices, which are the platforms on which mobile apps run, and then about different types of mobile apps. 
+
+\item What mobile users expect from their devices and the apps running on them. 
+
+\item How these mobile device and app realities, along with the expectations of the users, create challenges for testers, which will introduce a core set of topics 
+
+\item Introduce the topic of tester skills for mobile testing, and then equipment requirements, both of which are topics we’ll return to later in the book. 
+
+\item Look at software development life cycle models
+
+\item How the ongoing changes in the way software is built are influencing model app development.
+
+\end{enumerate}
+
+The scope of the mobile app challenge is only going to grow. This is a very, very rapidly evolving market. At the time I wrote this book, there were around six million mobile apps across the Android, Apple, Windows, Amazon, and Blackberry platforms. That’s a huge number, and a lot of competition. Furthermore, the number seems to be equal to, or perhaps even greater than, the number of applications available for Windows, Mac, and Linux PCs.
+
+This embarrassment of riches feeds users’ unreasonably high expectations of quality and their unreasonably high expectations of how fast they’ll get new features. People want all the new bells and whistles, all the new functionality. They want apps to be completely reliable. They want apps to be very fast. They want apps to be trivially easy to install, configure, and use.
+
+With mobile apps as with anything else, as testers, we should focus our attention on the user. Try to think about testing from the users’ point of view.
+
+Let’s consider an airline mobile app. Who’s the target user? Typically, the frequent flyer. From the users’ perspective, if you only travel every now and then, why go through the trouble of downloading and installing an app when you could just go to the mobile-optimized website? Even for those infrequent travelers who do use the app, they are not the airlines’ main customers.
+
+So, what does our target user, the frequent flyer, want to do? Well, as a frequent flyer, I often use such apps to check details on my flights. For example, is there a meal? What gate does it leave from?
+
+When I use these apps, I’m concerned with functionality, and also usability. For example, at one point on the Delta app, it had a page called “my reservations” that would show various kinds of information about a reservation, but not whether the flight had a meal. However, you could find the meal details on the appropriate flight status page. To get there, I had to back out of “my reservations,” remember (or find) the flight number, enter the flight number, and click to check the status. Then, buried in an obscure place on that page was an option to see the amenities—represented as icons rather than in words, as if to make it even less clear.
+
+Okay, so the functionality was there, but the usability was pretty poor. The information was a good seven or eight clicks away from the “my reservation” page. Besides, there’s just no good reason not to include the answer to an obvious question—are you going to feed me?
+
+Another important feature for a frequent flyer is to be able to check weather and maps for connections and destination cities. For example, if I’ve got a connection, I’ll want to know if there is weather in that area that might cause some inbound delays. If so, maybe I want to hedge my bets and get on a later connecting flight. If I’m arriving somewhere, I might want to quickly call up a map and see where the airport is in relationship to my hotel.
+
+So, there’s an interoperability element. The app won’t have that ability embedded within itself; it calls other apps on the device. Sometimes that works, but I’ve had plenty of times when it didn’t—at least not the first time.
+
+There’s also a portability element. I want to be able to solve my travel problems regardless of what kind of device I’m using at the time. So, whether I’m using my phone, or my tablet, or my PC, I want similar functionality and a similar way to access it.
+
+Unfortunately, the users’ desire for consistency is something that organizations seem to have a lot of trouble getting right. Obviously, there will be some user interface differences by necessity. But, just like driving a car and driving a truck feel similar enough that there’s no problem moving from one to the other, the same should apply to apps, regardless of the platform. When you test different platforms—and you certainly should—make sure that your test oracles include your app on other platforms.
+
+The problem is exacerbated by siloing in larger organizations. There can be three different groups of people developing and testing the mobile-optimized website, the native app, and the full-size website.
+
+Going back to the frequent flyer example, I need to use these apps or mobile-optimized websites under a wide variety of circumstances. Whether I have a Wi-Fi connection, fast or slow. Whether I have only a 4G or 3G data connection. In fact, the more urgent travel problems are likely to arise in situations with challenging connectivity. For example, when you’re running through an airport.
+
+Speed and reliability can be big concerns too. If I’m in the middle of trying to solve a screwed up travel situation, the last thing I want is to watch a little spinning icon, or have to start over when the app crashes.
+
+In addition to the users’ perspective, the airline also is a stakeholder, and that perspective has to be considered when testing. For example, with international customers there could be some localization issues related to supporting different languages.
+
+The airline wants to make it easy for a potential customer to go from looking for a particular flight on a particular day to actually purchasing a seat on the flight. If this natural use case—browse, find, purchase—is too hard, a frequent flyer can move from one airline’s app to another.
+
+Ultimately, the airline wants its app to help gain market share. It does that by solving the frequent flyers’ typical problems, reliably, quickly, and easily.
+
+Most of you probably aren’t testing airline apps. However, whatever type of app you are testing, you have to do the same kind of user and stakeholder analysis I just walked you through. It’s critical to consider the different, relevant quality characteristics. We’ll cover this in more detail later.
+
+So, you’ve now met your user—and she (or he) is you, right, or at least a lot like you? You probably interact with apps on your mobile device daily, hourly, in some cases continuously. You probably expect those apps to be self-explanatory, fast, and reliable. When you get a new app, you expect it to be easy to install and easy to learn, or you abandon it. So, when you’re testing, remember to think like your user. Of course, you’ll need to test in a lot of different situations, which is something we’ll explore a lot more in this book.
+
+1.2 Test your knowledge
+Let’s try one or more sample exam questions related to the material we’ve just covered. The answers are found in Appendix C.
+
+Question 3 Learning objective: MOB-1.2.1 (K2) Explain the expectations for a mobile application user and how this affects test prioritization
+
+Which of the following is a typical scenario involving a mobile app that does not meet user expectations for ease-of-use?
+
+A.Users abandon the app and find another with better usability.
+
+B.Users continue to use the app, as their options are limited.
+
+C.Users become frustrated by the app’s slow performance.
+
+D.Testers should focus on usability for the next release.
